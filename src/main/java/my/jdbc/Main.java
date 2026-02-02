@@ -1,9 +1,6 @@
 package my.jdbc;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import my.jdbc.dao.EmployeeDao;
 import my.jdbc.dao.EmployeeDaoImpl;
@@ -28,7 +25,9 @@ public class Main {
 		EmployeeDao empDao = new EmployeeDaoImpl();
 //		empDao.saveEmployee(e);
 		
-		empDao.updateEmployee(e);
+//		empDao.updateEmployee(e);
+		
+		empDao.deleteAnEmployee(9);
 	
 	}
 
