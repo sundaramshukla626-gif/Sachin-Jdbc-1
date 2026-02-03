@@ -18,16 +18,24 @@ Connection conn = DriverManager.getConnection("jdbc:mysql//localhost:3306/testdb
 public class Main {
 
 	public static void main(String[] args) throws SQLException {
+		
 
-		Employee e = new Employee(9, 44444, "Kunal singh", "kunal123@gmail.com");
-		String str="Ducat";
-
+//		Employee e = new Employee(9, 44444, "Kunal singh", "kunal123@gmail.com");
+//		String str="Ducat";
+//
 		EmployeeDao empDao = new EmployeeDaoImpl();
 //		empDao.saveEmployee(e);
 		
 //		empDao.updateEmployee(e);
 		
-		empDao.deleteAnEmployee(9);
+//		empDao.deleteAnEmployee(9);
+		
+//		empDao.printAllEmployee();
+		
+		Employee emp = empDao.getEmpById(3);
+		System.out.println(emp);
+		
+		System.out.println("Main.main()");
 	
 	}
 
