@@ -10,9 +10,6 @@ import my.jdbc.model.Employee;
 
 1st :- Create the Connection.
 
-Connection conn = DriverManager.getConnection("URL","username","password");
-Connection conn = DriverManager.getConnection("jdbc:mysql//localhost:3306/testdb","root","root");
-
 
 */
 public class Main {
@@ -32,8 +29,11 @@ public class Main {
 		
 //		empDao.printAllEmployee();
 		
-		Employee emp = empDao.getEmpById(3);
-		System.out.println(emp);
+//		Employee emp = empDao.getEmpById(3);
+//		System.out.println(emp);
+		
+//		System.out.println(empDao.getAllEmps());
+		System.out.println(empDao.getEmpByName("tddud' or '1 = 1"));
 		
 		System.out.println("Main.main()");
 	
